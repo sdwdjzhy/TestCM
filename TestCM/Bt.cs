@@ -11,15 +11,19 @@ using TestCM.Views;
 namespace TestCM
 {
     internal class Bt : BootstrapperBase
-    {
+    { 
         public Bt()
         {
             Initialize();
         }
-
+         
         protected override async void OnStartup(object sender, StartupEventArgs e)
         {
-            await DisplayRootViewForAsync<MainViewModel>();
+            // it is work
+            await DisplayRootViewForAsync<ParentViewModel>();
+            // it is not work
+            // await DisplayRootViewForAsync<MainViewModel>();
         }
+         
     }
 }

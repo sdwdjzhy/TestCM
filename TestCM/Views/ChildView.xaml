@@ -11,9 +11,7 @@
     d:DesignWidth="800"
     mc:Ignorable="d">
     <StackPanel>
-
         <TextBlock Text="This is ChildView" />
-
         <Button cm:Message.Attach="Close" Content="Close" />
     </StackPanel>
 </UserControl>
